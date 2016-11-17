@@ -183,6 +183,11 @@ namespace Robot_clicker
                                     }));
 
                             order.getElementsByTagName(""textarea"")[0].value = ""Привет! У меня есть вопрос!"";
+                            order.getElementsByClassName(""cf-ok"")[0].dispatchEvent(new MouseEvent(""click"", {
+                                ""view"": window,
+                                ""bubbles"": true,
+                                ""cancelable"": false
+                            }));
                         }
                     }
                     return set.showAll();
